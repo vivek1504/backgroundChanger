@@ -1,9 +1,10 @@
-name: build on pr
+name: Build on PR
 
-on: 
-  pull_request : 
-    branches : 
+on:
+  pull_request:
+    branches:
       - master
+      - main
 
 jobs:
   build:
@@ -14,10 +15,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20'
-
+      
       - name: Install Dependencies
         run: npm install
-
+        
       - name: Run Build
         run: npm run build
-
