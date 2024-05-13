@@ -21,6 +21,10 @@ function Buttons({setColor}){
      <button onClick={()=>{setColor("white")}}>White</button>
      <button style={{backgroundColor:"orange"}} onClick={()=>{setColor("orange")}}>orange</button>
    </div>
+
+
+
+
 }
 
 export default App
