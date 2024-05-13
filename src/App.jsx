@@ -13,6 +13,10 @@ function App() {
   </div>
 }
 
+
+
+
+
 function Buttons({setColor}){
    return <div>
      <button style={{backgroundColor:"red"}} onClick={()=>{setColor("red")}}>Red</button>
